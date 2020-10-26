@@ -1,6 +1,6 @@
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #bfbfbf;`
+  color: #bfbfbf;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
@@ -80,6 +80,13 @@ body {
   display: flex;
   align-items: center;
   padding-right: 10px;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between
+
 }
 
 .content {
@@ -171,4 +178,109 @@ body {
   margin-left: 9px;
 }
 
-
+.sidebar {
+  max-width: 368px;
+  margin-top: 30px;
+}
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FAFAFA;
+  border-bottom: 1px solid #E8E8E8;
+  padding: 15px 25px 15px 25px;
+  height: 70px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+}
+.sidebar__img {
+  border-radius: 50%;
+}
+.sidebar__title {
+  margin-left: 17px;
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+}
+.sidebar__switch {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.sidebar__nav {
+  background: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+.sidebar__item:hover {
+  color: #FAAD14;
+  border-right: 3px solid #FAAD14;
+}
+.sidebar__item {
+  list-style: none;
+}
+.sidebar__link {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+  padding: 16px 16px 16px 48px;
+}
+.sidebar__link:hover {
+  color: #FAAD14;
+}
+.sidebar__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FAAD14;
+  border-radius: 4px;
+  border: none;
+  margin: 20px 0;
+  width: 100%;
+  height: 50px;
+  padding: 13px 26px;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+.button__img {
+  margin-right: 5px;
+}
+.sidebar__content {
+  background: #FFFFFF;
+  padding: 22px 40px 30px 25px;
+}
+.comment__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D48806;
+}
+.comment__info {
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+}
+.sidebar__add {
+  position: absolute;
+  margin-top: 20px;
+  margin-right: 15px;
+  border: 1px solid #E8E8E8;
+}
+.sidebar__add::before {
+  position: absolute;
+  right: 0;
+  content: "Реклама";
+  width: 99px;
+  height: 21px;  
+  background: #C4C4C4;
+  font-size: 12px;
+  line-height: 20px;text-align: center;
+  color: #FFFFFF;
+}
